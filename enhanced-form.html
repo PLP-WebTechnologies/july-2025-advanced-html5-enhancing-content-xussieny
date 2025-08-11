@@ -1,0 +1,184 @@
+﻿‎<!DOCTYPE html>
+‎<html lang="en">
+‎<head>
+‎    <meta charset="UTF-8">
+‎    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+‎    <title>Enhanced form</title> 
+‎     </head>  
+‎    <header>
+‎        <h1>Enhanced HTML5 Form Example</h1>
+‎        <p>This page demonstrates a complete HTML5 form with various input types, validation, and semantic structure.</p>
+‎    </header>
+‎    <section>
+‎        <h2>Featured Products</h2>
+‎        <table>
+‎            <thead>
+‎                <tr>
+‎                    <th>Product</th>
+‎                    <th>Description</th>
+‎                    <th>Price</th>
+‎                </tr>
+‎            </thead>
+‎            <tbody>
+‎                <tr>
+‎                    <td>Web Development Course</td>
+‎                    <td>Comprehensive HTML5, CSS3, and JavaScript</td>
+‎                    <td>$300</td>
+‎                </tr>
+‎                <tr>
+‎                    <td>Design Toolkit</td>
+‎                    <td>UI/UX resources and templates</td>
+‎                    <td>$100</td>
+‎                </tr>
+‎                <tr>
+‎                    <td>Premium Hosting</td>
+‎                    <td>1-year unlimited hosting plan</td>
+‎                    <td>$150</td>
+‎                </tr>
+‎            </tbody>
+‎        </table>
+‎    </section>
+‎    <section>
+‎        <h2>Why Choose Us?</h2>
+‎        <ul>
+‎            <li>Industry-leading expertise</li>
+‎            <li>24/7 customer support</li>
+‎            <li>Money-back guarantee</li>
+‎            <li>Regular updates and improvements</li>
+‎        </ul>
+‎
+‎          
+‎        </section>
+‎
+‎    <main>
+‎        <h2>Registration Form</h2>
+‎        <form id="registrationForm" action="/submit" method="post">
+‎            <div class="form-group">
+‎                <label for="fullName" class="required">Full Name</label>
+‎                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label for="email" class="required">Email Address</label>
+‎                <input type="email" id="email" name="email" placeholder="your.email@example.com" required autocomplete="email">
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label for="phone">Phone Number</label>
+‎                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+‎                <small class="error">Format: 123-456-7890</small>
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label for="password" class="required">Password</label>
+‎                <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters">
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label for="confirmPassword" class="required">Confirm Password</label>
+‎                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Re-enter your password">
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label for="birthdate">Date of Birth</label>
+‎                <input type="date" id="birthdate" name="birthdate" min="1900-01-01" max="2023-12-31">
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label for="country">Country</label>
+‎                <select id="country" name="country">
+‎                    <option value="">Select a country</option>
+‎                    <option value="south africa>south africa</option>
+‎                    <option value="kenya">kenya</option>
+‎                    <option value="ethiopia">ethiopia</option>
+‎                    <option value="nigeria">nigeria</option>
+‎                    <option value="other">Other</option>
+‎                </select>
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label>Subscription Plan</label>
+‎                <div>
+‎                    <input type="radio" id="planBasic" name="subscriptionPlan" value="basic" checked>
+‎                    <label for="planBasic">Basic ($10.99/month)</label>
+‎                </div>
+‎                <div>
+‎                    <input type="radio" id="planPro" name="subscriptionPlan" value="pro">
+‎                    <label for="planPro">Professional ($20.99/month)</label>
+‎                </div>
+‎                <div>
+‎                    <input type="radio" id="planEnterprise" name="subscriptionPlan" value="enterprise">
+‎                    <label for="planEnterprise">Enterprise (50.99/month)</label>
+‎                </div>
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label>Interests (Select all that apply)</label>
+‎                <div>
+‎                    <input type="checkbox" id="interestWeb" name="interests" value="web">
+‎                    <label for="interestWeb">Web Development</label>
+‎                </div>
+‎                <div>
+‎                    <input type="checkbox" id="interestMobile" name="interests" value="mobile">
+‎                    <label for="interestMobile">Mobile Development</label>
+‎                </div>
+‎                <div>
+‎                    <input type="checkbox" id="interestData" name="interests" value="data">
+‎                    <label for="interestData">Data Science</label>
+‎                </div>
+‎                <div>
+‎                    <input type="checkbox" id="interestDesign" name="interests" value="design">
+‎                    <label for="interestDesign">UI/UX Design</label>
+‎                </div>
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label for="website">Website URL (if any)</label>
+‎                <input type="url" id="website" name="website" placeholder="https://example.com">
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label for="experience">Years of Experience</label>
+‎                <input type="number" id="experience" name="experience" min="0" max="50" step="1" placeholder="0">
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label for="referralCode">Referral Code</label>
+‎                <input type="text" id="referralCode" name="referralCode" readonly value="WELCOME2023">
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label for="comments">Additional Comments</label>
+‎                <textarea id="comments" name="comments" rows="4" placeholder="Any special requests or comments..."></textarea>
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label for="profilePic">Profile Picture (optional)</label>
+‎                <input type="file" id="profilePic" name="profilePic" accept="image/png, image/jpeg">
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <label for="favColor">Favorite Color</label>
+‎                <input type="color" id="favColor" name="favColor" value="#3498db">
+‎            </div>
+‎
+‎            <div class="form-group">
+‎                <input type="checkbox" id="terms" name="terms" required>
+‎                <label for="terms" class="required">I agree to the terms and conditions</label>
+‎            </div>
+‎
+‎            <button type="submit">Submit Registration</button>
+‎            <button type="reset">Reset Form</button>
+‎        </form>
+‎    </main>
+‎
+‎    <footer>
+‎        <p>&copy; 2025 Enhanced Form . All rights reserved.</p>
+‎        <address>
+‎            Contact us at <a href="mailto:xussieny@gmail.com">info@example.com</a>
+‎        </address>
+‎    </footer>
+‎
+‎    </body>
+‎</html>
+‎
